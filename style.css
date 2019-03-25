@@ -165,23 +165,107 @@ body {
     background-color: #ffffff;
 }
 
-
-
-
-
-
-
-.trendy img{padding-left: 149px;
-    padding-bottom: 21px;
-    
-}
-
 .promo2 {
     margin-top: 98px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.promo2-content {
+    display: flex;
+}
+
+.trendy {
+    position: relative;
+    width: 560px;
+    height: 261px;
+    background-color: #dadad2;
+    background-image: url(img/trendy.png);
+    background-repeat: no-repeat;
+    background-position: right -21px;
+}
+
+.promo2-left {
+    margin-right: 20px;
+}
+
+.hot-deal {
+    margin-bottom: 20px;
+    width: 560px;
+    height: 542px;
+    background-image: url(img/hot-deal.jpg);
+}
+
+.offer {
+    margin-bottom: 20px;
+    width: 560px;
+    height: 261px;
+    background-image: url(img/offer.jpg);
+}
+
+.new-arrivals {
+    width: 560px;
+    height: 542px;
+    background-image: url(img/new-arrivals.jpg);
+}
+
+.promo-text {
+    position: absolute;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 950;
+    margin-top: 26px;
+    padding: 16px 20px;
+    letter-spacing: 0.45px;
+    background-color: #ffffff;
+}
+
+.promo-text span {
+    font-size: 30px;
+    letter-spacing: 0.75px;
+}
+
+.items {
+    display: flex;
+    margin-top: 39px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 280px;
+    color: #222222;
+    padding-bottom: 39px;
 }
 
 
+.fetured-items {
+    text-align: left;
+}
 
+.fetured-items h2 {
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    margin-bottom: 16px;
+    text-align: center;
+}
 
-
-
+.fetured-items h5 {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    text-align: center
+}
+.fetured-items a{
+    text-decoration: none;
+}
+.fetured-items .button{
+    width: 212px;
+    text-align: center;
+margin-left: 464px;
+    margin-top: 40px;
+    margin-bottom: 113px;
+}
