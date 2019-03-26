@@ -64,7 +64,7 @@ body {
     background-color: #ffffff;
 }
 
-.header__form input {
+.header-text {
     text-indent: 16px;
 }
 
@@ -238,7 +238,6 @@ body {
     padding-bottom: 39px;
 }
 
-
 .fetured-items {
     text-align: left;
 }
@@ -259,13 +258,221 @@ body {
     letter-spacing: 0.35px;
     text-align: center
 }
-.fetured-items a{
+
+.fetured-items a {
     text-decoration: none;
 }
-.fetured-items .button{
+
+.fetured-items .button {
     width: 212px;
     text-align: center;
-margin-left: 464px;
+    margin-left: 464px;
     margin-top: 40px;
     margin-bottom: 113px;
+}
+
+.offer2 {
+    background-color: #222224;
+    background-image: url(img/offer2.jpg);
+    height: 529px;
+    background-repeat: no-repeat;
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    margin-bottom: 97px;
+}
+
+.offer2-h {
+    margin-left: 39px;
+    color: #ffffff;
+}
+
+.offer2 h1 {
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-top: 146px;
+}
+
+.offer2 h3 {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+}
+
+.offer2 h4 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-bottom: 17px;
+    padding-top: 7px;
+}
+
+.promo-text2 {
+    width: 373px;
+    margin-left: 435px;
+    margin-top: 55px;
+}
+
+.promo-text2 img {
+    padding-left: 36px;
+    padding-right: 34px;
+    float: left;
+}
+
+.promo-text2 p {
+    width: 219px;
+    clear: both;
+    padding-left: 111px;
+    margin-bottom: 62px;
+}
+
+.subscribe {
+    height: 100%;
+    background-image: url(img/footer.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    color: #222224;
+    margin-bottom: 109px;
+}
+
+.subscribe-flex {
+    display: flex;
+}
+
+.subscribe-left {
+    height: 438px;
+    width: 570px;
+    opacity: inherit;
+}
+
+.subscribe-left img {
+    padding-top: 111px;
+    float: left;
+    padding-right: 28px;
+}
+
+.subscribe-left p {
+    width: 386px;
+    padding-top: 123px;
+    padding-left: 111px;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    margin-bottom: 19px;
+}
+
+.subscribe-left span {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.subscribe-left h6 {
+    padding-left: 111px;
+}
+
+.subscribe-right h2 {
+    padding-top: 148px;
+    padding-left: 147px;
+    width: 277px;
+    color: #222224;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subscribe-right h3 {
+    padding-left: 147px;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+}
+
+.subscribe-form {
+    margin-top: 35px;
+    padding-left: 92px;
+}
+
+.subscribe-text {
+    width: 334px;
+    height: 46px;
+    border-radius: 23px 0 0 23px;
+    background-color: #e1e1e1;
+    text-indent: 16px;
+    border: 1px solid #e6e6e6;
+    border-width: 0px;
+    position: absolute;
+}
+
+.subscribe-button {
+    width: 104px;
+    height: 46px;
+    border-radius: 0 23px 23px 0;
+    background-color: #f16d7f;
+    border: 1px solid #e6e6e6;
+    border-width: 0px;
+    position: relative;
+    left: 282px;
+}
+
+.description {
+    width: 427px;
+    line-height: 1.5;
+    color: #898989;
+    font-size: 14px;
+    font-weight: 300;
+    float: left;
+}
+
+.description a {
+    margin-bottom: 29px;
+}
+
+.footer-menu {
+    display: flex;
+    width: 609px;
+    padding-left: 63px;
+    justify-content: space-between;
+}
+
+.info {
+    margin-top: 14px;
+}
+
+.info-list span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.info-list {
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 15px;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.info-ul {
+    margin-top: 40px;
+}
+
+.footer-copy p {
+    padding-top: 33px;
+    padding-bottom: 32px;
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-copy {
+    margin-top: 90px;
+    background-color: #e6e6e6;
 }
