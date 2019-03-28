@@ -68,11 +68,6 @@ body {
     background-color: #ffffff;
 }
 
-.header-text {
-    text-indent: 16px;
-    padding-right: 16px;
-}
-
 .header__form img {
     width: 14px;
     height: 14px;
@@ -165,10 +160,12 @@ body {
 
 .header-text {
     height: 38px;
-    width: 317px;
+    width: 276px;
     border-radius: 0 3px 3px 0;
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
+    text-indent: 16px;
+    padding-right: 16px;
 }
 
 .promo2 {
@@ -456,7 +453,7 @@ body {
 }
 
 .subscribe-text {
-    width: 334px;
+    width: 266px;
     height: 46px;
     border-radius: 23px 0 0 23px;
     background-color: #e1e1e1;
@@ -464,6 +461,7 @@ body {
     border: 1px solid #e6e6e6;
     border-width: 0px;
     position: absolute;
+    padding-right: 16px;
 }
 
 .subscribe-button {
@@ -562,27 +560,28 @@ body {
     height: 148px;
     background-color: #f8f3f4;
     text-transform: uppercase;
- 
 }
 
 .nav-page-box {
     padding-top: 65px;
     color: #f16d7f;
+}
 
-}
-.nav-page-box a{
+.nav-page-box a {
     padding-top: 4px;
-    
 }
-.nav-page-box h1{
+
+.nav-page-box h1 {
     color: #f16d7f;
-font-size: 24px;
-font-weight: 700;
-    
-    
+    font-size: 24px;
+    font-weight: 700;
 }
-.nav-page-box a{
-font-size: 11px;
-    font-weight: 300;}
-.nav-page-box h1 span{
-    margin-right: 770px;}
+
+.nav-page-box a {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.nav-page-box h1 span {
+    margin-right: 770px;
+}
