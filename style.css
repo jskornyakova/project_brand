@@ -585,3 +585,29 @@ body {
 .nav-page-box h1 span {
     margin-right: 770px;
 }
+.product-image {
+    height: 777px;
+border: 1px solid #eaeaea;
+background-color: #f7f7f7;
+ 
+}
+
+
+.product__image {
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 42px;
+    
+}
+
+.WOMEN {
+    
+}
+
+.women-collection {
+    text-align: center;
+    height: 730px;
+border: 1px solid #eaeaea;
+background-color: #ffffff;
+ 
+}
