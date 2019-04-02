@@ -662,10 +662,18 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
+    margin-left: 44px;
 }
+
 
 .collection-h4 span {
     color: #2f2f2f;
+}
+.select-choose {
+    margin-right: 262px;
+    margin-left: 262px;
+    display: inline-flex;
+    padding-left: 43px;
 }
 
 .select-h4 {
@@ -673,7 +681,18 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-    display: inline-block;
+    width: 144px;
+    margin-right: 90px;
+}
+
+.select-h4 h4{
+    margin-bottom: 16px;
+}
+
+.select-h4 select{
+    width: 144px;
+    padding: 12px 11px;
+
 }
 
 .price {
@@ -681,8 +700,9 @@ body {
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    margin-top: 37px;
-    margin-bottom: 107px;
+    margin: 37px 250px 63px 250px;
+    padding-bottom: 43px;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .drop {
