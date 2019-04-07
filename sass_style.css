@@ -1092,4 +1092,79 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.form-proceed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 63px;
+  padding-bottom: 80px;
+}
+
+.form-proceed-h2 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.form-proceed-h2 span {
+  margin-left: 5px;
+}
+
+.form-proceed-p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.form-proceed-p span {
+  margin-left: 5px;
+}
+
+.form-proceed-button {
+  padding: 12px 18px;
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  width: 100px;
+  text-align: center;
+}
+
+.form-proceed .adress {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 355px;
+}
+
+.form-proceed .adress-text {
+  border: 1px solid #eaeaea;
+  padding: 16px;
+  width: 323px;
+  margin-bottom: 22px;
+}
+
+.form-proceed .adress-country {
+  width: 355px;
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  color: #b1b1b1;
+  margin-bottom: 22px;
+}
+
+.form-proceed .grand-total {
+  width: 272px;
+  height: 174px;
+  background: #f5f3f3;
+  padding: 40px 44px 0px 44px;
+  text-align: right;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=sass_style.css.map */
