@@ -31,11 +31,21 @@ body
         display: flex
         align-items: center
     &__right 
-        position: relative
         display: flex
         align-items: center
-        &:hover .drop-cart 
-            display: block
+        &_account a
+            height: 38px
+            padding-top: 10px
+            padding-bottom: 10px
+            line-height: 38px
+        &_cart
+            margin-right: 26px
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative
+            &:hover .drop-cart 
+                display: block
+
     &-text 
         height: 38px
         width: 276px
@@ -44,8 +54,7 @@ body
         background-color: $white
         text-indent: 16px
         padding-right: 16px
-    &__cart 
-        margin-right: 26px
+        
            
 .header__form 
     display: flex
@@ -118,7 +127,7 @@ body
     padding: 20px
     border: 1px solid #e8e8e8
     border-radius: 5px
-    top: 46px
+    top: 42px
     background-color: $white
     display: none
     position: absolute
@@ -179,6 +188,7 @@ body
     font-weight: 700
     text-transform: uppercase
     background-color: $white
+    text-align: center
     &:hover 
         border: 1px solid $pink
     & a 
@@ -367,7 +377,9 @@ body
         width: 261px
         position: relative
         margin-bottom: 39px
+        transition: transform 1s
         &:hover 
+            transform: scale(1.05)
             box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
         &:hover .product__img 
             filter: brightness(40%)
@@ -758,7 +770,10 @@ body
         vertical-align: middle
         text-transform: uppercase
         padding: 22px 
-            
+        & input
+            text-align: center
+            padding: 5px 10px
+            width: 34px
         & h2
             text-align: left
             margin-top: 13px
@@ -793,6 +808,9 @@ body
     font-size: 14px
     font-weight: 700
     text-transform: uppercase
+    &:hover
+        color: $pink
+        border: 1px solid $pink
 
 .form-proceed
     display: flex
@@ -823,6 +841,9 @@ body
         border: 1px solid #eaeaea
         width: 100px
         text-align: center
+        &:hover
+            color: $pink
+            border: 1px solid $pink
     .adress
         flex-wrap: wrap
         width: 355px
