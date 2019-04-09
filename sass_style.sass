@@ -40,8 +40,8 @@ body
             line-height: 38px
         &_cart
             margin-right: 26px
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 10px
+            margin-bottom: 10px
             position: relative
             &:hover .drop-cart 
                 display: block
@@ -127,7 +127,7 @@ body
     padding: 20px
     border: 1px solid #e8e8e8
     border-radius: 5px
-    top: 42px
+    top: 46px
     background-color: $white
     display: none
     position: absolute
@@ -762,6 +762,7 @@ body
 
     .d-tr
         display: table-row
+        
 
     .d-td
         display: table-cell
@@ -770,6 +771,10 @@ body
         vertical-align: middle
         text-transform: uppercase
         padding: 22px 
+        &_delete img
+            opacity: 0
+            &:hover
+                opacity: 1
         & input
             text-align: center
             padding: 5px 10px
@@ -792,11 +797,12 @@ body
             line-height: 20px
             text-transform: uppercase
             letter-spacing: -0.2px
-            color: #222222
+            color: $dark_grey
             
         & img
             padding: 22px
             float: left
+    
 
 .d-tr-last
     padding: 44px
@@ -865,3 +871,94 @@ body
         padding: 40px 44px 0px 44px
         text-align: right
         text-transform: uppercase
+        &-button a
+            color: $white
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            &:hover
+                color: $pink
+
+.checkout
+    &_right_h3_radio
+        margin-bottom: 33px
+    &_right_h3_radio li
+        color: $dark_grey
+        font-size: 16px
+        font-weight: 400
+        text-transform: uppercase
+        list-style-type: none
+    &_box
+        display: flex
+        justify-content: space-between
+        padding-top: 35px
+        font-weight: 400
+        color: #b3b2b2
+        font-size: 13px
+        line-height: 20px
+        &_left_p
+            color: $dark_grey
+            font-size: 14px
+            font-weight: 400
+            line-height: 14px
+            padding-top: 15px
+            padding-left: 212px
+        &_right_ul
+            padding-bottom: 39px
+            & li
+                list-style-type: none
+                color: #b3b2b2
+                font-size: 13px
+                line-height: 20px
+        & h2
+            color: $dark_grey
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            padding-bottom: 15px
+        & h3
+            color: $dark_grey
+            font-size: 12px
+            line-height: 12px
+            text-transform: uppercase
+            & span
+                color: red
+        & p
+            padding-bottom: 27px
+            & span
+                color: red
+    &_list
+        list-style-type: decimal-leading-zero
+        padding-bottom: 33px
+        border-bottom: 1px solid #e8e8e8
+        margin: 33px
+        &_link
+            color: $dark_grey
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+    &_text
+        width: 360px
+        height: 35px
+        padding: 5px 15px
+        border: 1px solid #eaeaea
+        background-color: $white
+        margin-top: 15px
+        margin-bottom: 15px
+    &_button
+        border: 1px solid #eaeaea
+        background-color: $white
+        color: #4a4a4a
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        width: 180px
+        height: 50px
+        padding-top: 10px
+        padding-bottom: 10px
+        margin-bottom: 47px
+        float: left
+        &:hover
+          border: 1px solid $pink 
+
+    

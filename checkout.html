@@ -267,86 +267,46 @@
                 <a href="#">Men / </a>
                 <a href="#">New Arrivals</a></h1> </div>
     </nav>
-    <div class="container table">
-        <div class="d-table">
-            <div class="d-tr">
-                <div class="d-td">Product Details</div>
-                <div class="d-td">unite Price</div>
-                <div class="d-td">Quantity</div>
-                <div class="d-td">shipping</div>
-                <div class="d-td">Subtotal</div>
-                <div class="d-td">ACTION</div>
-            </div>
-            <div class="d-tr">
-                <div class="d-td"><img src="img/incart1.jpg" alt="">
-                    <h2><a class="product__link" href="single_page.html">Mango People T-shirt</a>
-                    <p>Color: Red <br>Size: Xll</p></h2> </div>
-                <div class="d-td">$150</div>
-                <form class="d-td">
-                    <input type="text" value="2" required="Заполните только цифрами" pattern="[0-9]{2}"> </form>
-                <div class="d-td">FREE</div>
-                <div class="d-td">$300</div>
-                <div class="d-td d-td_delete">
-                    <a href="#"><img src="img/delete.png" alt=""></a>
+    <section class="container checkout">
+        <ol class="checkout_right">
+            <li class="checkout_list"><a href="#" class="checkout_list_link">Shipping Adress</a>
+                <div class="checkout_box">
+                    <div class="checkout_box_right">
+                        <h2>Check as a guest or register</h2>
+                        <p>Register with us for future convenience</p>
+                        <ul class="checkout_right_h3_radio">
+                            <li>
+                                <input name="h3_radio" value="checkout" type="radio"> checkout as guest</li>
+                            <li>
+                                <input name="h3_radio" value="register" type="radio" checked>register</li>
+                        </ul>
+                        <h2>register and save time!</h2>
+                        <p>Register with us for future convenience</p>
+                        <ul class="checkout_box_right_ul">
+                            <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Fast and easy checkout</li>
+                            <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Easy access to your order history and status</li>
+                        </ul>
+                        <input type="submit" value="Continue" class="button checkout_button"> </div>
+                    <div class="checkout_box_left">
+                        <h2>Already registed?</h2>
+                        <p>Please log in below</p>
+                        <h3>EMAIL ADDRESS<span>*</span></h3>
+                        <input id="email" class="checkout_text" required="" pattern="\S+@[a-z]+.[a-z]+">
+                        <h3>PASSWORD <span>*</span></h3>
+                        <input id="password" class="checkout_text" required="" pattern="\S+@[a-z]+.[a-z]+">
+                        <p> <span>* Required Fileds</span></p>
+                        <input type="submit" value="Log in" class="button checkout_button">
+                        <p class="checkout_box_left_p">Forgot Password?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="d-tr">
-                <div class="d-td"><img src="img/incart2.jpg" alt="">
-                    <h2><a class="product__link" href="single_page.html">Mango People T-shirt</a>
-                    <p>Color: Red <br>Size: Xll</p></h2> </div>
-                <div class="d-td">$150</div>
-                <form class="d-td">
-                    <input type="text" value="2" required="Заполните только цифрами" pattern="[0-9]{2}"> </form>
-                <div class="d-td">FREE</div>
-                <div class="d-td">$300</div>
-                <div class="d-td d-td_delete">
-                    <a href="#"><img src="img/delete.png" alt=""></a>
-                </div>
-            </div>
-            <div class="d-tr">
-                <div class="d-td"><img src="img/incart3.jpg" alt="">
-                    <h2><a class="product__link" href="single_page.html">Mango People T-shirt</a>
-                    <p>Color: Red <br>Size: Xll</p></h2></div>
-                <div class="d-td">$150</div>
-                <form class="d-td">
-                    <input type="text" value="2" required="Заполните только цифрами" pattern="[0-9]{2}"> </form>
-                <div class="d-td">FREE</div>
-                <div class="d-td">$300</div>
-                <div class="d-td d-td_delete">
-                    <a href="#"><img src="img/delete.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="d-tr-last">
-            <div class="d-td"><a href="#" class="button_cart">CLEAR SHOPPING CART</a></div>
-            <div class="d-td"><a href="#" class="button_cart">CONTINUE SHOPPING</a></div>
-        </div>
-    </div>
-    <div class="container form-proceed">
-        <div class="adress">
-            <h2 class="form-proceed-h2">Shipping Adress</h2>
-            <div class="adress-select">
-                <select class="adress-country">
-                    <option value="Bangladesh">Bangladesh</option>
-                    <option value="Russia">Russia</option>
-                </select>
-            </div>
-            <input type="text" class="adress-text" placeholder="State">
-            <input type="text" class="adress-text" placeholder="Postcode / Zip">
-            <div class="form-proceed-button">get a quote</div>
-        </div>
-        <div class="discount">
-            <h2 class="form-proceed-h2">coupon  discount</h2>
-            <p class="form-proceed-p">Enter your coupon code if you have one</p>
-            <input type="text" class="adress-text" placeholder="State">
-            <div class="form-proceed-button">Apply coupon</div>
-        </div>
-        <div class="grand-total">
-            <p class="form-proceed-p">Sub total <span class="pink">$900</span></p>
-            <h2 class="form-proceed-h2">GRAND TOTAL <span class="pink">$900</span></h2>
-            <div class="button grand-total-button"><a href="checkout.html"> to checkout</a></div>
-        </div>
-    </div>
+            </li>
+            <li class="checkout_list"><a href="#" class="checkout_list_link">BILLING INFORMATION</a></li>
+            <li class="checkout_list"><a href="#" class="checkout_list_link">SHIPPING INFORMATION</a></li>
+            <li class="checkout_list"><a href="#" class="checkout_list_link">SHIPPING METHOD</a></li>
+            <li class="checkout_list"><a href="#" class="checkout_list_link">PAYMENT METHOD</a></li>
+            <li class="checkout_list"><a href="#" class="checkout_list_link">ORDER REVIEW</a></li>
+        </ol>
+    </section>
     <footer class="comment">
         <div class="container comment-flex">
             <figure class="comment-left"> <img src="img/Layer_40.png" alt="">
