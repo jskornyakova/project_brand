@@ -2,6 +2,9 @@
     margin: 0
     padding: 0
 
+html
+    height: 100%
+
 @import "vars";
 
 a 
@@ -9,6 +12,15 @@ a
 
 body 
     font-family: 'Lato', sans-serif
+    height: 100%
+
+.wrapper
+    min-height: 100% 
+    display: flex
+    flex-direction: column
+
+.top
+    flex-grow: 1
 
 .container 
     width: 1140px
@@ -438,7 +450,6 @@ body
 .offer2 
     background-color: #222224
     background-image: url(img/offer2.jpg)
-    height: 529px
     background-repeat: no-repeat
     color: #fbfbfb
     font-size: 14px
@@ -491,9 +502,9 @@ body
 
     &-flex 
         display: flex
+        margin-bottom: 164px
     
     &-left 
-        height: 438px
         width: 570px
         opacity: inherit
         & img 
@@ -517,7 +528,9 @@ body
             font-size: 16px
             font-weight: 700
             letter-spacing: 0.4px
-            
+
+    &-right
+        width: 570px         
     &-right h2 
         padding-top: 148px
         padding-left: 147px
@@ -561,12 +574,14 @@ body
         left: 282px
 
 .footer-flex 
+        display: flex
         margin-bottom: 90px
 
 .footer-copy 
     height: 79px
     background-color: #e6e6e6
     display: flex
+    justify-content: space-between
     & p 
         padding-top: 33px
         padding-bottom: 32px
@@ -603,9 +618,11 @@ body
     color: #898989
     font-size: 14px
     font-weight: 300
-    float: left
+    
     & a 
         margin-bottom: 29px
+    & p
+        margin-bottom: 5px
 
 .networks 
     width: 32px
@@ -624,7 +641,7 @@ body
     &-box 
         padding-top: 24px
         display: flex
-        margin-left: 690px
+
 
 .menu-page 
     height: 148px
@@ -790,6 +807,7 @@ body
             font-size: 13px
             font-weight: 300
             line-height: 20px
+            text-align: left
             
         & a
             font-size: 13px
@@ -871,7 +889,7 @@ body
         padding: 40px 44px 0px 44px
         text-align: right
         text-transform: uppercase
-        &-button a
+        &-button
             color: $white
             font-size: 16px
             font-weight: 700
@@ -889,7 +907,7 @@ body
         text-transform: uppercase
         list-style-type: none
     &_box
-        display: flex
+        display: none
         justify-content: space-between
         padding-top: 35px
         font-weight: 400
@@ -932,11 +950,16 @@ body
         padding-bottom: 33px
         border-bottom: 1px solid #e8e8e8
         margin: 33px
-        &_link
+        &_Btn
             color: $dark_grey
             font-size: 16px
             font-weight: 700
             text-transform: uppercase
+        & input[type="checkbox"]
+            display: none
+            &:checked ~ .checkout_box
+                display: flex
+
     &_text
         width: 360px
         height: 35px
@@ -958,6 +981,7 @@ body
         padding-bottom: 10px
         margin-bottom: 47px
         float: left
+        line-height: 14px
         &:hover
           border: 1px solid $pink 
 

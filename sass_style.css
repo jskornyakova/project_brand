@@ -3,12 +3,34 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .container {
@@ -613,7 +635,6 @@ body {
 .offer2 {
   background-color: #222224;
   background-image: url(img/offer2.jpg);
-  height: 529px;
   background-repeat: no-repeat;
   color: #fbfbfb;
   font-size: 14px;
@@ -686,10 +707,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 164px;
 }
 
 .comment-left {
-  height: 438px;
   width: 570px;
   opacity: inherit;
 }
@@ -718,6 +739,10 @@ body {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.4px;
+}
+
+.comment-right {
+  width: 570px;
 }
 
 .comment-right h2 {
@@ -767,6 +792,9 @@ body {
 }
 
 .footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 90px;
 }
 
@@ -776,6 +804,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-copy p {
@@ -830,11 +861,14 @@ body {
   color: #898989;
   font-size: 14px;
   font-weight: 300;
-  float: left;
 }
 
 .description a {
   margin-bottom: 29px;
+}
+
+.description p {
+  margin-bottom: 5px;
 }
 
 .networks {
@@ -870,7 +904,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 690px;
 }
 
 .menu-page {
@@ -1089,6 +1122,7 @@ body {
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
+  text-align: left;
 }
 
 .d-table .d-td a {
@@ -1208,14 +1242,14 @@ body {
   text-transform: uppercase;
 }
 
-.form-proceed .grand-total-button a {
+.form-proceed .grand-total-button {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.form-proceed .grand-total-button a:hover {
+.form-proceed .grand-total-button:hover {
   color: #f16d7f;
 }
 
@@ -1232,9 +1266,7 @@ body {
 }
 
 .checkout_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1299,11 +1331,21 @@ body {
   margin: 33px;
 }
 
-.checkout_list_link {
+.checkout_list_Btn {
   color: #222222;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.checkout_list input[type="checkbox"] {
+  display: none;
+}
+
+.checkout_list input[type="checkbox"]:checked ~ .checkout_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .checkout_text {
@@ -1329,6 +1371,7 @@ body {
   padding-bottom: 10px;
   margin-bottom: 47px;
   float: left;
+  line-height: 14px;
 }
 
 .checkout_button:hover {
