@@ -88,6 +88,27 @@ body {
   line-height: 38px;
 }
 
+.header__right_account {
+  position: relative;
+}
+
+.header__right_account .button {
+  padding-right: 22px;
+}
+
+.header__right_account:hover::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  left: 109px;
+  top: 15px;
+  position: absolute;
+  border-bottom: 1px solid #f16d7f;
+  border-right: 1px solid #f16d7f;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .header__right_cart {
   margin-right: 26px;
   margin-top: 10px;

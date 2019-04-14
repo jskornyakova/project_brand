@@ -50,6 +50,21 @@ body
             padding-top: 10px
             padding-bottom: 10px
             line-height: 38px
+        &_account
+            position: relative
+            & .button
+                padding-right: 22px;
+            &:hover::before
+                content: ""
+                width: 6px
+                height: 6px
+                left: 109px
+                top: 15px
+                position: absolute
+                border-bottom: 1px solid $pink
+                border-right: 1px solid $pink
+                transform: rotate(45deg)
+                
         &_cart
             margin-right: 26px
             margin-top: 10px
