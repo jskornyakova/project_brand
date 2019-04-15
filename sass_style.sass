@@ -31,7 +31,7 @@ body
 
 .header 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
-    border: 1px solid #ececec
+    border-bottom: 1px solid #ececec
     background-color: $white
     height: 100px
     &-flex 
@@ -50,21 +50,9 @@ body
             padding-top: 10px
             padding-bottom: 10px
             line-height: 38px
-        &_account
-            position: relative
-            & .button
-                padding-right: 22px;
-            &:hover::before
-                content: ""
-                width: 6px
-                height: 6px
-                left: 109px
-                top: 15px
-                position: absolute
-                border-bottom: 1px solid $pink
-                border-right: 1px solid $pink
-                transform: rotate(45deg)
-                
+        &_account i
+            padding-right: 20px;
+
         &_cart
             margin-right: 26px
             margin-top: 10px
@@ -81,8 +69,7 @@ body
         background-color: $white
         text-indent: 16px
         padding-right: 16px
-        
-           
+
 .header__form 
     display: flex
     align-items: center
@@ -149,6 +136,7 @@ body
     &:hover 
         color: $pink
         background-color: $white
+        border: 1px solid $pink
 
 .drop-cart 
     padding: 20px
@@ -506,7 +494,7 @@ body
 
 .comment 
     height: 100%
-    background-image: url(img/footer.jpg)
+    background: url(img/footer.jpg) 100% 100%
     background-size: cover
     filter: opacity(80%)
     font-size: 12px
@@ -517,7 +505,7 @@ body
 
     &-flex 
         display: flex
-        margin-bottom: 164px
+        padding-bottom: 164px
     
     &-left 
         width: 570px
@@ -665,6 +653,8 @@ body
     .nav-page-box 
         padding-top: 65px
         color: $pink
+        display: flex
+        justify-content: space-between
         & a 
             padding-top: 4px
             font-size: 14px
@@ -676,8 +666,7 @@ body
             color: $pink
             font-size: 24px
             font-weight: 700
-            & span 
-                margin-right: 770px
+            
     
 .product-image 
     height: 777px
@@ -1000,4 +989,35 @@ body
         &:hover
           border: 1px solid $pink 
 
-    
+.product-choose-nav_menu
+    display: flex
+    flex-direction: column
+
+.product-choose-drop
+    display: none
+    & .drop-menu
+        margin-top: 37px
+        margin-left: 20px
+
+.product-choos-size input[type="checkbox"]
+    border: 1px solid #ebebeb
+    background-color: $white
+
+.product-choose-nav_list
+    list-style-type: none
+    list-style-type: none
+    margin: 20px 20px 0px 0px
+    &_Btn
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 700
+        line-height: 14px
+        text-transform: uppercase
+        border-bottom: 1px solid #e8e8e8
+        padding: 13px 137px 13px 13px
+    & input[type="checkbox"]
+        display: none
+        &:checked ~ .product-choose-drop
+            display: flex
+        
+        

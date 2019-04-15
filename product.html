@@ -71,7 +71,8 @@
                                 <div class="button_cart"><a href="shopping_cart.html">Go to cart</a></div>
                             </div>
                         </div>
-                        <div class="header__right_account"><a href="#" class="button">My Account</a> </div>
+                        <div class="header__right_account"><a href="#" class="button">My Account <i class="fas fa-caret-down"></i>
+                        </a> </div>
                     </div>
                 </div>
             </header>
@@ -232,60 +233,123 @@
                 <div class="container nav-page-box">
                     <h1><span class="pink">New Arrivals</span></h1>
                     <h1> <a href="index.html">Home / </a>
-                                <a href="product.html">Men / </a>
-                                <a href="single_page.html">New Arrivals</a></h1> </div>
+                            <a href="product.html">Men / </a>
+                            <a href="single_page.html">New Arrivals</a></h1> </div>
             </nav>
-            <section class="container checkout">
-                <ol class="checkout_right">
-                    <li class="checkout_list">
-                        <label for="pseudoBtn" class="checkout_list_Btn">Shipping Adress</label>
-                        <input type="checkbox" id="pseudoBtn">
-                        <div class="checkout_box">
-                            <div class="checkout_box_right">
-                                <h2>Check as a guest or register</h2>
-                                <p>Register with us for future convenience</p>
-                                <ul class="checkout_right_h3_radio">
-                                    <li>
-                                        <input name="h3_radio" value="checkout" type="radio"> checkout as guest</li>
-                                    <li>
-                                        <input name="h3_radio" value="register" type="radio" checked>register</li>
+            <section class="container product-choose">
+                <div class=product-choose-nav>
+                    <ul class="product-choose-nav_menu">
+                        <li class="product-choose-nav_list">
+                            <label for="pseudoBtn" class="product-choose-nav_list_Btn">Category <i class="fas fa-caret-down"></i> </label>
+                            <input type="checkbox" id="pseudoBtn">
+                            <div class="product-choose-drop">
+                                <ul class="drop-menu">
+                                    <li><a href="single_page.html" class="drop-link">Accessories</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Bags</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Denim</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Jackets & Coats</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Pants</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Polos</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Shirts</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Shoes</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Shorts</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Sweaters & Knits</a></li>
+                                    <li><a href="single_page.html" class="drop-link">T-Shirts</a></li>
+                                    <li><a href="single_page.html" class="drop-link">Tanks</a></li>
                                 </ul>
-                                <h2>register and save time!</h2>
-                                <p>Register with us for future convenience</p>
-                                <ul class="checkout_box_right_ul">
-                                    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Fast and easy checkout</li>
-                                    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Easy access to your order history and status</li>
-                                </ul>
-                                <input type="submit" value="Continue" class="button checkout_button"> </div>
-                            <div class="checkout_box_left">
-                                <h2>Already registed?</h2>
-                                <p>Please log in below</p>
-                                <h3>EMAIL ADDRESS<span>*</span></h3>
-                                <input id="email2" class="checkout_text" required="" pattern="\S+@[a-z]+.[a-z]+">
-                                <h3>PASSWORD <span>*</span></h3>
-                                <input id="password" class="checkout_text" required="" pattern="\S+@[a-z]+.[a-z]+">
-                                <p> <span>* Required Fileds</span></p>
-                                <input type="submit" value="Log in" class="button checkout_button">
-                                <p class="checkout_box_left_p">Forgot Password?</p>
                             </div>
+                        </li>
+                        <li class="product-choose-nav_list">
+                            <label for="pseudoBtn2" class="product-choose-nav_list_Btn">BRAND <i class="fas fa-caret-down"></i></label>
+                            <input type="checkbox" id="pseudoBtn2"> </li>
+                        <li class="product-choose-nav_list">
+                            <label for="pseudoBtn3" class="product-choose-nav_list_Btn">DESIGNER <i class="fas fa-caret-down"></i></label>
+                            <input type="checkbox" id="pseudoBtn3"> </li>
+                    </ul>
+                </div>
+                <div class="product-choose-size select-h4">
+                    <h4>CHOOSE SIZE</h4>
+                    <p>
+                        <input type="checkbox" name="a" value="XXS"> XXS</p>
+                    <p>
+                        <input type="checkbox" name="a" value="XS"> XS</p>
+                    <p>
+                        <input type="checkbox" name="a" value="S"> S</p>
+                    <p>
+                        <input type="checkbox" name="a" value="M"> M</p>
+                    <p>
+                        <input type="checkbox" name="a" value="L"> L</p>
+                    <p>
+                        <input type="checkbox" name="a" value="XL"> XL</p>
+                    <p>
+                        <input type="checkbox" name="a" value="XXL"> XXL</p>
+                </div>
+                <div class="product-box">
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
                         </div>
-                    </li>
-                    <li class="checkout_list">
-                        <label for="pseudoBtn2" class="checkout_list_Btn">BILLING INFORMATION</label>
-                        <input type="checkbox" id="pseudoBtn2"> </li>
-                    <li class="checkout_list">
-                        <label for="pseudoBtn3" class="checkout_list_Btn">SHIPPING INFORMATION</label>
-                        <input type="checkbox" id="pseudoBtn3"> </li>
-                    <li class="checkout_list">
-                        <label for="pseudoBtn4" class="checkout_list_Btn">SHIPPING METHOD</label>
-                        <input type="checkbox" id="pseudoBtn4"> </li>
-                    <li class="checkout_list">
-                        <label for="pseudoBtn5" class="checkout_list_Btn">PAYMENT METHOD</label>
-                        <input type="checkbox" id="pseudoBtn5"> </li>
-                    <li class="checkout_list">
-                        <label for="pseudoBtn6" class="checkout_list_Btn">ORDER REVIEW</label>
-                        <input type="checkbox" id="pseudoBtn6"> </li>
-                </ol>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <a href="single_page.html"><img class="product__img" src="img/mango1.jpeg" alt="product photo"></a>
+                        <div class="product__text"> <a class="product__link" href="single_page.html">Mango People T-shirt</a>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="shopping_cart.html" class="product__add"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                    </div>
+                </div>
             </section>
         </div>
         <footer class="footer">
@@ -294,7 +358,7 @@
                     <figure class="comment-left"> <img src="img/Layer_40.png" alt="">
                         <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
                         <h6><span class="pink">Bin Burhan</span>
-                            <br> Dhaka, Bd </h6> </figure>
+                                    <br> Dhaka, Bd </h6> </figure>
                     <div class="comment-right">
                         <h2>Subscribe</h2>
                         <h3>FOR OUR NEWLETTER AND PROMOTION</h3>
