@@ -45,19 +45,22 @@ body
     &__right 
         display: flex
         align-items: center
+        &_account
+            width: 155px
         &_account a
             height: 38px
             padding-top: 10px
             padding-bottom: 10px
             line-height: 38px
         &_account i
-            padding-right: 20px;
+            padding-left: 10px;
 
         &_cart
             margin-right: 26px
             margin-top: 10px
             margin-bottom: 10px
             position: relative
+            z-index: 9999
             &:hover .drop-cart 
                 display: block
 
@@ -988,38 +991,181 @@ body
         line-height: 14px
         &:hover
           border: 1px solid $pink 
+
 .product-choose
     display: flex
-    flex-wrap: wrap
-.product-choose-nav_menu
-    display: flex
-    flex-direction: column
+    padding-top: 70px
+    padding-bottom: 110px
+    & .button_view a
+        padding: 15px 45px
 
-.product-choose-drop
-    display: none
-    & .drop-menu
-        margin-top: 37px
-        margin-left: 20px
+    &-nav_menu
+        display: flex
+        flex-direction: column
+        width: 243px
 
-.product-choos-size input[type="checkbox"]
-    border: 1px solid #ebebeb
-    background-color: $white
-
-.product-choose-nav_list
-    list-style-type: none
-    list-style-type: none
-    margin: 20px 20px 0px 0px
-    &_Btn
-        color: #6f6e6e
-        font-size: 14px
-        font-weight: 700
-        line-height: 14px
-        text-transform: uppercase
-        border-bottom: 1px solid #e8e8e8
-        padding: 13px 137px 13px 13px
-    & input[type="checkbox"]
+    &-drop
         display: none
-        &:checked ~ .product-choose-drop
+        & .drop-menu
+            margin-top: 37px
+            margin-left: 20px
+    &-size.select-h4
+        width: auto
+    &-size p
+        display: inline
+        padding-right: 10px
+
+    &-size input[type="checkbox"]
+        border: 1px solid #ebebeb
+        background-color: $white
+
+    &-nav_list
+        list-style-type: none
+        list-style-type: none
+        margin: 20px 20px 18px 0px
+        padding-bottom: 12px
+        border-bottom: 1px solid #e8e8e8
+        &_Btn
+            color: #6f6e6e
+            font-size: 14px
+            font-weight: 700
+            line-height: 14px
+            text-transform: uppercase
+            border-left: 5px solid $pink
+            padding: 13px 13px 13px 13px
+            & i
+                float: right
+        & input[type="checkbox"]
+            display: none
+            &:checked ~ .product-choose-drop
+                display: flex
+    & .filter__slider
+        text-align: center
+        &_price
             display: flex
-        
-        
+            justify-content: space-between
+    
+    &-trend .select-h4
+        padding-bottom: 16px
+
+    &-trend-link a
+        font-size: 14px
+        font-weight: 400
+        line-height: 26px
+        color: #6f6e6e
+        padding-right: 5px
+        &:hover
+            color: $pink
+
+    &-sort
+        margin-top: 43px
+        background-color: #f3f3f3
+        display: flex
+        justify-content: flex-start
+        flex-direction: row
+        width: 100%
+        .select-sort
+            padding: 12px 11px
+            border: 1px solid #ebebeb
+            background-color: $white
+            font-size: 14px
+            color: #6f6e6e
+            font-weight: 400
+            margin: 10px 10px
+            & select
+                padding-left: 20px 
+                border: none
+                outline: none
+                font-size: 14px
+                color: #6f6e6e
+                font-weight: 400
+    .choose2
+        padding-left: 50px          
+    .header_choose2
+        display: flex 
+        justify-content: space-between               
+
+    .filter-range 
+        width: 262px;
+        text-transform: uppercase
+        &-title
+            margin-bottom: 16px
+
+    .range-controls 
+        position: relative
+        margin-bottom: 20px
+
+    .range-controls .scale 
+        height: 3px
+        background: #f0f0f0
+
+    .range-controls .bar 
+        height: 3px
+        width: 80%
+        background: $pink
+
+    .range-toggle
+        position: absolute
+        top: -5px
+        width: 14px
+        height: 14px
+        background: #f0f0f0
+        border-radius: 50%
+    
+    .range-toggle:hover 
+        background: $pink
+
+    .range-toggle-min 
+        left: 0
+
+    .range-toggle-max 
+        left: 80%    
+
+    .range_price
+        display: flex
+        justify-content: space-between
+
+    .nav_page
+        display: flex
+        justify-content: space-between
+        & .button_view
+            padding-top: 15px
+            & a
+                color: $white
+                padding-left: 45px
+        & .page
+            border: 1px solid #ebebeb
+            background-color: #ffffff
+            padding: 15px 39px
+        & a
+            color: #c4c4c4
+            font-size: 16px
+            font-weight: bold
+            line-height: 16px
+            padding-left: 7px
+            &:hover
+                color: $pink
+
+.footer_offer2
+    display: flex
+    justify-content: space-between
+    &_flex
+        background-color: #222224
+        color: #fbfbfb
+        text-align: center
+        padding-top: 90px
+        padding-bottom: 114px
+    & img
+        padding-bottom: 32px
+    & h4
+        font-size: 20px
+        font-weight: 700
+        letter-spacing: 0.5px
+        padding-bottom: 17px
+    & p
+        width: 308px
+        font-size: 13.5px
+        font-weight: 300
+        letter-spacing: 0.35px
+        text-align: justify
+        line-height: 23.95px
